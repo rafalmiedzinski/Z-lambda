@@ -1,2 +1,2 @@
 # Z-lambda
-Z-lambda is a software application designed for analyzing and modeling laser-induced thermal effects in materials. It provides advanced tools for processing experimental data and simulating laser-material interactions, making it a valuable resource for researchers and engineers working in materials science and related fields.
+Z-lambda is a software for investigating heat transfer during z-scan experiments with isotropic transparent solids. The software allows for the modeling and analysis of laser radiation heat and thermal conductivity coefficient for the sample being tested. It is designed to be user-friendly, flexible, and open-source, making it accessible for researchers and scientists in the field of materials science and optics.
