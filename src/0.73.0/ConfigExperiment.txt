@@ -1,0 +1,57 @@
+# If you want to comment some phrase in the ConfigExperiment.txt file, please use # at the beginning of the line
+# Below you can set the simulation condition. 
+# Please notice that you have to use the units pointed in [ ] brackets.
+
+
+#Single shot experiment - if SingleShot=0 the calculation will be performed normally.
+#If value is equal 1, only 1000 iteration will be perform. In this mode the sample is irradiated by one probe laser pulse at the position z0.
+#If the laser is CW, then the sample is irradiated durring 1000 irradiation.
+SingleShot = 1
+
+#Number of CPU threads
+Threads = 16
+
+
+#Z-scan range. Distance between -z and +z [mm]
+ZScanRange = 50
+
+#Sample velocity [mm/s]. 
+SampleVelocity = 1
+
+#Simulation time [s]. 
+#If the SimulationTime is longer than full scan time: (t_fullscan = ZScanRange/SampleVelocity) the calculation will continue without the laser irradiation.
+#In the opposite (SimulationTime < t_fullscan), the  calculation will stop at SimulationTime
+SimulationTime = 300
+
+#Duration of the numerical time step. Real valu in [s]
+NumericalTimeStep = 5e-5
+
+#Laser wavelength [nm]
+LambdaOfLaser = 532.0
+
+#Beam radius at z0 [m]
+omegaZero = 25e-6
+
+#Laser pulse duration [s], if you put 0 the laser will be CW not pulsed (i.e. 5ns -> 5e-9, 100ps - 100e-12)
+LaserPulseDuration = 5e-9
+
+#Laser Pulse Energy (if the LaserPulseDuration > 0) [J]
+LaserPulseEnergy = 5e-4
+
+#LaserPower (if the LaserPulseDuration = 0) [W]
+LaserCWPower = 10e-3
+
+#Pulse Repetition frequency [Hz] for pulsed laser. Please notice that the value must be integer.
+LaserPulseRepetition = 10
+
+#Save Zero Planes interval [s] If the value is 0, then data will be saved after each iteration and it's take a huge time and disk space. 
+SaveZPRInterval = 10.0
+
+#Save Zero Planes (1 = Yes, 0 = No) - indicate that the program will be saved Zero Planes results
+DoesSaveZPRInterval = 1
+
+#Save all sample Interval [s] - If the value is 0, then data will be saved after each iteration.
+SaveASInterval = 25.0
+
+#Save all sample (1 = Yes, 0 = No) - indicate that the program will be saved All sample heat map results
+DoesSaveASInterval  = 1
