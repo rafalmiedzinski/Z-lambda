@@ -1823,26 +1823,7 @@ double SimulationData::CornerThreeD(double dXi, double dYi, double dZi, double T
     double Two_dFox = 2 * dFox;
     double Two_dFoy = 2 * dFoy;
     double Two_dFoz = 2 * dFoz;
-    /*
-    double TijkPow3 = (Tijk * Tijk * Tijk);
     
-    double Tcz0Pow4 = Tcz[0] * Tcz[0] * Tcz[0] * Tcz[0];
-    double Tcz1Pow4 = Tcz[1] * Tcz[1] * Tcz[1] * Tcz[1];
-    double Tcz2Pow4 = Tcz[2] * Tcz[2] * Tcz[2] * Tcz[2];
-
-    double result = 0;
-    result =  Two_dFox * (Ti_1 + dXi * Tcz[0] + dXr * Tcz0Pow4);
-    result += Two_dFoy * (Tj_1 + dYi * Tcz[1] + dYr * Tcz1Pow4);
-    result += Two_dFoz * (Tk_1 + dZi * Tcz[2] + dZr * Tcz2Pow4);
-    result += Tijk * (1 - (Two_dFox) - (Two_dFoy) - (Two_dFoz) 
-        - (Two_dFoz * dZi) 
-        - (Two_dFoy * dYi) 
-        - (Two_dFox * dXi)
-        - (Two_dFoz * dZr * TijkPow3)
-        - (Two_dFoy * dYr * TijkPow3)
-        - (Two_dFox * dXr * TijkPow3));
-        */
-    //Without radiation temperature loss
     double result = 0;
     result =  Two_dFox * (Ti_1 + dXi * Tcz[0]);
     result += Two_dFoy * (Tj_1 + dYi * Tcz[1]);
@@ -2409,23 +2390,4 @@ double SimulationData::EdgeThreeD(double dFo_a, double dFo_b, double dFo_c, doub
 
     return result;
    
-    
-    
-    
-     // Dobrze bez "Radiative"
-    /*
-    double foo;
-    cin >> foo;
-    
-    double result = 0;
-    double TwodFo_b = 2 * dFo_b;
-    double TwodFo_c = 2 * dFo_c;
-    double TwodFo_a = 2 * dFo_a;
-
-    result = TwodFo_b * (Tb_1 + dBi * Tcz[0]);
-    result += TwodFo_c * (Tc_1 + dCi * Tcz[1]);
-    result += dFo_a * (Ta_1 + Tap1);
-    result += Tijk * (1 - (TwodFo_a) - (TwodFo_b) - (TwodFo_c) - (TwodFo_b * dBi) - (TwodFo_c * dCi));
-    return result;
-    */
 }
