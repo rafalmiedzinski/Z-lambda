@@ -5,14 +5,13 @@ Z-lambda is a software tool written in C++ for investigating heat transfer durin
 
 <h3 align="left">Installation</h3>
 
-To use Z-lambda, you must have a C++ compiler installed on your system. The program can be compiled using any standard C++ compiler. Simply download the source code and compile it on your system. For lunux and macOS simply execute bash file:
+To use Z-lambda, you must have a C++ compiler installed on your system. The program can be compiled using at least C++11 compiler with pthreads. Simply download the source code and compile it on your system. For lunux and macOS simply execute bash file:
 
 <pre><code class="language-bash">
 ./compile.sh
 </code></pre>
 
-
-or manually compile z-lambda:
+The script will compile the programme and save it in the bin directory, along with the files needed to run it. Manually, compilation can be performed using the command:
 
 <pre><code class="language-bash">
 g++ main.cpp ExperimentData.cpp thermo.cpp -o zlambda -pthread -std=c++11 -O3
