@@ -5,7 +5,18 @@ Z-lambda is a software tool written in C++ for investigating heat transfer durin
 
 <h3 align="left">Installation</h3>
 
-To use Z-lambda, you must have a C++ compiler installed on your system. The program can be compiled using any standard C++ compiler. Simply download the source code and compile it on your system.
+To use Z-lambda, you must have a C++ compiler installed on your system. The program can be compiled using any standard C++ compiler. Simply download the source code and compile it on your system. For lunux and macOS simply execute bash file:
+
+<pre><code class="language-bash">
+./compile.sh
+</code></pre>
+
+
+or manually compile z-lambda:
+
+<pre><code class="language-bash">
+g++ main.cpp ExperimentData.cpp thermo.cpp -o zlambda -pthread -std=c++11 -O3
+</code></pre>
 
 <h3 align="left">Usage</h3>
 
@@ -29,8 +40,10 @@ Specific heat capacity
 Thermal conductivity
 Once you have specified these parameters and properties in the input files, you can run the program by executing the following command:
 
-
-./zlambda.exe ConfigExperiment.txt ConfigSample.txt
+<pre><code class="language-bash">
+./zlambda.exe
+</code></pre>
+./zlambda.exe
 The program will then simulate heat transfer using the specified parameters and properties, and output the temperature distribution of the sample during the Z-scan experiment.
 
 <h3 align="left">Output</h3>
