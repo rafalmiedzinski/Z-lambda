@@ -14,9 +14,8 @@ SingleShot = 1
 # However, not every processor is capable of handling up to 64 threads, which can lead to 
 # decreased performance. Before setting the number of threads, please check the specifications 
 # of your processor and choose the appropriate number of threads for your hardware.
-
-# Number of CPU threads - integer naumber in the range from 1 to 64 
 # CAUTION!!!
+# Number of CPU threads - integer naumber in the range from 1 to 64
 Threads = 2
 
 
