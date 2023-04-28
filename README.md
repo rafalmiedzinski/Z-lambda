@@ -3,6 +3,12 @@
 
 Z-lambda is a software tool written in C++ for investigating heat transfer during Z-scan experiments with isotropic transparent solids. The program can calculate the function T(t,x,y,z) of the sample during Z-scan experiments, which makes it a valuable resource for researchers in the field of materials science and optics.
 
+We are excited to inform you that two scientific papers concerning z-lambda have been submitted to scientific journals. One of these papers is open access, and everything is explained within. We kindly ask that you cite our earlier publications concerning Z-scan until these two papers are published.
+
+<p>Rafał Miedziński (ORCID:<strong><span style="color: #993300;"> <a style="color: #993300;" href="https://orcid.org/0000-0002-7526-089X">https://orcid.org/0000-0002-7526-089X</a></span></strong><span class="orcid-id-https">)</span></p>
+
+<p>Izabela Fuks-Janczarek (ORCID: <strong><span style="color: #993300;"><a style="color: #993300;" href="https://orcid.org/0000-0002-5129-6783">https://orcid.org/0000-0002-5129-6783</a></span></strong><span id="orcid-id" class="orcid-id-https">)</span></p>
+
 <h3 align="left">Installation</h3>
 
 To use Z-lambda, you must have a C++ compiler installed on your system. The program can be compiled using at least C++11 compiler with pthreads. Simply download the source code and compile it on your system. For lunux and macOS simply execute bash file:
@@ -42,7 +48,6 @@ Once you have specified these parameters and properties in the input files, you 
 <pre><code class="language-bash">
 ./zlambda.exe
 </code></pre>
-./zlambda.exe
 The program will then simulate heat transfer using the specified parameters and properties, and output the temperature distribution of the sample during the Z-scan experiment.
 
 <h3 align="left">Output</h3>
