@@ -479,7 +479,7 @@ void SimulationData::SetData(ExperimentData incomingexData, SampleData incomings
     if (ThreadNumber > 64) ThreadNumber = 64;
     //Estimation of maximum ThreadNumber due to N-elements
     //Condition: N / ThreadNumber >=2, if not then ThreadNumber - 1
-    while ((!(N / ThreadNumber) >= 2) && (ThreadNumber >=2))
+    while (((!(N / ThreadNumber)) >= 2) && (ThreadNumber >=2))
     {
         ThreadNumber--;
     }
