@@ -11,7 +11,7 @@ We are excited to inform you that two scientific papers concerning z-lambda have
 
 <h3 align="left">Installation</h3>
 
-To use Z-lambda, you must have a C++ compiler installed on your system. The program can be compiled using at least C++11 compiler with pthreads. Simply download the source code and compile it on your system. For lunux and macOS simply execute bash file:
+To use Z-lambda, you must have a C++ compiler installed on your system. The program can be compiled using at least C++11 compiler with pthreads. Simply download the source code and compile it on your system. For Linux and macOS simply execute bash file:
 
 <pre><code class="language-bash">
 ./compile.sh
